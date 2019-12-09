@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Родион Сайфулин](https://up.htmlacademy.ru/adaptive/18/user/1077087).
-* Наставник: [Владислав Кривокора](https://htmlacademy.ru/profile/id167185).
+* Наставник: [Владислав Кривокора](https://htmlacademy.ru/profile/krivokora).
 
 ---
 
