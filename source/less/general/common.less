@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: @oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+// FIXME: бэм блок создать
+.container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 320px;
+  @media @tablet-width {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 768px;
+  }
+  @media @desktop-width {
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1300px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+a {
+  text-decoration: none;
+  color: @black;
+}
+
+// FIXME:
+ul {
+  .reset-list;
+}
