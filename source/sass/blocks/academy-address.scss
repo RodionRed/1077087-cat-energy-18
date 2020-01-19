@@ -1,0 +1,112 @@
+.academy-address {
+  display: flex;
+  flex-direction: row;
+  margin-top: 45px;
+  padding-bottom: 22px;
+}
+
+.academy-address__link {
+  @include bm;
+  margin-top: 9px;
+
+  @include a;
+  font-size: 16px;
+  line-height: 16px;
+  color: $light-black;
+  text-decoration: none;
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.academy-address__logo {
+  @include bm;
+  width: 27px;
+  height: 34px;
+  margin-top: 0;
+  margin-left: auto;
+  background-image: url("../img/main-footer__academy-link.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 27px 34px;
+
+  &:hover {
+    background-image: url("../img/main-footer__academy-link--hover.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 27px 34px;
+  }
+
+  &:focus {
+    background-image: url("../img/main-footer__academy-link--focus.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 27px 34px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .academy-address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 162px;
+    margin-top: -2px;
+    padding-bottom: 22px;
+  }
+
+  .academy-address__link {
+    @include bm;
+    margin-top: -4px;
+
+    @include a;
+    font-size: 16px;
+    line-height: 16px;
+    color: $light-black;
+    text-decoration: none;
+  }
+
+  .academy-address__logo {
+    @include bm;
+    width: 27px;
+    height: 34px;
+    margin-left: none;
+    background-image: url("../img/main-footer__academy-link.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 27px 34px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .academy-address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 162px;
+    margin-top: -5px;
+  }
+
+  .academy-address__link {
+    @include bm;
+    @include a;
+    font-size: 16px;
+    line-height: 16px;
+    color: $light-black;
+    text-decoration: none;
+  }
+
+  .academy-address__logo {
+    @include bm;
+    width: 27px;
+    height: 34px;
+    margin-left: none;
+    background-image: url("../img/main-footer__academy-link.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 27px 34px;
+  }
+}

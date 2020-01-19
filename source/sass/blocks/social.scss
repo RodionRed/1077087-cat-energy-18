@@ -1,0 +1,211 @@
+.social {
+  position: relative;
+
+  @include bm;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 125px;
+  margin-left: 72px;
+  margin-top: 75px;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: -21px;
+    left: -72px;
+    width: 280px;
+    height: 1px;
+    background-color: $light-gray-two;
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    bottom: -24px;
+    left: -72px;
+    width: 280px;
+    height: 1px;
+    background-color: $light-gray-two;
+  }
+}
+
+.social__link {
+  @include bm;
+  @include nolist;
+}
+
+.social__website {
+  @include bm;
+  font-size: 0;
+
+  svg {
+    fill: $light-black;
+  }
+
+  &--vk {
+    @include bm;
+    width: 22px;
+    height: 12px;
+  }
+
+  &--inst {
+    @include bm;
+    width: 16px;
+    height: 16px;
+  }
+
+  &--fb {
+    @include bm;
+    width: 10px;
+    height: 19px;
+  }
+
+  &:hover {
+    svg {
+      fill: $green;
+    }
+  }
+
+  &:focus {
+    svg {
+      opacity: 0.3;
+      fill: $green;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .social {
+    @include bm;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 126px;
+    margin-left: 19px;
+    margin-top: -30px;
+
+    &::before {
+      display: none;
+      position: absolute;
+      content: "";
+      top: -21px;
+      left: -72px;
+      width: 280px;
+      height: 1px;
+      background-color: $light-gray-two;
+    }
+
+    &::after {
+      display: none;
+      position: absolute;
+      content: "";
+      bottom: -24px;
+      left: -72px;
+      width: 280px;
+      height: 1px;
+      background-color: $light-gray-two;
+    }
+  }
+
+  .social__link {
+    @include bm;
+    @include nolist;
+  }
+
+  .social__website {
+    @include bm;
+    font-size: 0;
+
+    svg {
+      fill: $light-black;
+    }
+
+    &--vk {
+      @include bm;
+      width: 30px;
+      height: 16px;
+    }
+
+    &--inst {
+      @include bm;
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      @include bm;
+      width: 14px;
+      height: 28px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .social {
+    @include bm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 126px;
+    margin-left: 19px;
+    margin-top: -30px;
+
+    &::before {
+      display: none;
+      position: absolute;
+      content: "";
+      top: -21px;
+      left: -72px;
+      width: 280px;
+      height: 1px;
+      background-color: $light-gray-two;
+    }
+
+    &::after {
+      display: none;
+      position: absolute;
+      content: "";
+      bottom: -24px;
+      left: -72px;
+      width: 280px;
+      height: 1px;
+      background-color: $light-gray-two;
+    }
+  }
+
+  .social__link {
+    @include bm;
+    @include nolist;
+  }
+
+  .social__website {
+    @include bm;
+    font-size: 0;
+
+    svg {
+      fill: $light-black;
+    }
+
+    &--vk {
+      @include bm;
+      width: 30px;
+      height: 16px;
+    }
+
+    &--inst {
+      @include bm;
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      @include bm;
+      width: 14px;
+      height: 28px;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.text-block {
+  @include bm;
+}
+
+.text-block__title {
+  @include bm;
+  padding-top: 26px;
+
+  @include or;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $white;
+}
+
+.text-block__text {
+  @include bm;
+  padding-top: 25px;
+
+  @include or;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+}
+
+@media (min-width: $tablet) {
+  .text-block {
+    @include bm;
+  }
+
+  .text-block__title {
+    @include bm;
+    padding-top: 57px;
+    padding-left: 87px;
+    padding-right: 200px;
+
+    @include or;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $black;
+  }
+
+  .text-block__text {
+    @include bm;
+    padding-top: 41px;
+    padding-left: 88px;
+
+    @include or;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: $black;
+  }
+}
+
+@media (min-width: $desktop) {
+  .text-block {
+    @include bm;
+  }
+
+  .text-block__title {
+    @include bm;
+    padding-top: 110px;
+    padding-left: 80px;
+    padding-right: 600px;
+
+    @include or;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $black;
+  }
+
+  .text-block__text {
+    @include bm;
+    padding-top: 41px;
+    padding-left: 80px;
+
+    @include or;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: $black;
+  }
+}

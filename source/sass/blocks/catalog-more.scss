@@ -1,0 +1,132 @@
+.catalog-more {
+  @include bm;
+  overflow-x: hidden;
+}
+
+.catalog-more__container {
+  @include bm;
+  @include container (320px, 20px, 20px);
+}
+
+.catalog-more__title {
+  position: relative;
+
+  @include bm;
+  margin-top: 29px;
+
+  @include or;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: -367px;
+    width: 400px;
+    height: 3px;
+    background-color: $green;
+  }
+}
+
+@media (min-width: $tablet) {
+  .catalog-more {
+    @include bm;
+    overflow-x: hidden;
+  }
+
+  .catalog-more__container {
+    @include bm;
+    @include container (768px, 30px, 30px);
+  }
+
+  .catalog-more__title {
+    position: relative;
+
+    @include bm;
+    margin-top: 68px;
+    margin-left: 38px;
+
+    @include or;
+    font-size: 36px;
+    line-height: 36px;
+    color: $black;
+    z-index: 20;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      left: -2000px;
+      top: 22px;
+      width: 5000px;
+      height: 3px;
+      background-color: $green;
+      z-index: -1;
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      left: -42px;
+      top: 22px;
+      width: 414px;
+      height: 6px;
+      background-color: $white;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog-more {
+    @include bm;
+    overflow-x: hidden;
+  }
+
+  .catalog-more__container {
+    @include bm;
+    @include container (1300px, 40px, 40px);
+  }
+
+  .catalog-more__title {
+    position: relative;
+
+    @include bm;
+    margin-top: 71px;
+    margin-left: 0;
+
+    @include or;
+    font-size: 36px;
+    line-height: 36px;
+    color: $black;
+    z-index: 20;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      left: -2000px;
+      top: 22px;
+      width: 5000px;
+      height: 3px;
+      background-color: $green;
+      z-index: -1;
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      left: -42px;
+      top: 22px;
+      width: 414px;
+      height: 6px;
+      background-color: $white;
+      z-index: -1;
+    }
+  }
+}

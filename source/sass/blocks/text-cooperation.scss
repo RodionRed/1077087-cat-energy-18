@@ -1,0 +1,116 @@
+.text-cooperation {
+  display: flex;
+}
+
+.text-cooperation__title {
+  @include bm;
+  width: 140px;
+
+  @include or;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.text-cooperation__address {
+  @include bm;
+  width: 140px;
+
+  @include a;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  color: $black;
+  text-align: left;
+
+  span {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $tablet) {
+  .text-cooperation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text-cooperation__title {
+    @include bm;
+    width: 160px;
+    margin-top: 62px;
+    margin-left: 42px;
+
+    @include or;
+    font-size: 20px;
+    line-height: 25px;
+    color: $black;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .text-cooperation__address {
+    @include bm;
+    width: 170px;
+    margin-top: 60px;
+    margin-right: 42px;
+
+    @include a;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    color: $black;
+    text-align: right;
+
+    span {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .text-cooperation {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 570px;
+    height: 201px;
+    margin-top: 95px;
+    background-color: $white;
+  }
+
+  .text-cooperation__title {
+    @include bm;
+    width: 160px;
+    margin-top: 66px;
+    margin-left: 77px;
+
+    @include or;
+    font-size: 20px;
+    line-height: 25px;
+    color: $black;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .text-cooperation__address {
+    @include bm;
+    width: 170px;
+    margin-top: 64px;
+    margin-right: 74px;
+
+    @include a;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    color: $black;
+    text-align: left;
+
+    span {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+}

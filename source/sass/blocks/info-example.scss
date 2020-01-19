@@ -1,0 +1,349 @@
+.info-example {
+  @include bm;
+}
+
+.info-example__title {
+  @include bm;
+  padding-top: 17px;
+
+  @include or;
+  font-size: 36px;
+  line-height: 60px;
+  color: $black;
+}
+
+.info-example__text {
+  @include bm;
+  padding-top: 24px;
+  padding-right: 9px;
+
+  @include a;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@-moz-document url-prefix("") {
+  .info-example__text {
+    letter-spacing: -0.1px;
+  }
+}
+
+.info-example__items {
+  @include bm;
+  @include nolist;
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+  width: 280px;
+}
+
+.info-example__item {
+  @include bm;
+  width: 124px;
+  padding: 15px 0;
+
+  @include or;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid $light-gray-three;
+  border-radius: 5px;
+
+  &:nth-child(1) {
+    position: relative;
+    margin-right: auto;
+
+    &::after {
+      position: absolute;
+      content: "снижение веса";
+      bottom: -16px;
+      left: 17px;
+      width: 87px;
+      padding-right: 10px;
+      padding-left: 10px;
+
+      @include a;
+      font-size: 12px;
+      line-height: 12px;
+      text-transform: none;
+      background-color: $light-gray;
+    }
+  }
+
+  &:nth-child(2) {
+    position: relative;
+    margin-left: auto;
+
+    &::after {
+      position: absolute;
+      content: "затрачено времени";
+      bottom: -16px;
+      left: 18px;
+      width: 87px;
+
+      @include a;
+      font-size: 12px;
+      line-height: 12px;
+      text-transform: none;
+      background-color: $light-gray;
+    }
+  }
+}
+
+.info-example__weight {
+  @include bm;
+}
+
+.info-example__days {
+  @include bm;
+}
+
+.info-example__costs {
+  @include bm;
+  margin-top: 34px;
+
+  @include or;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+}
+
+@media (min-width: $tablet) {
+  .info-example {
+    @include bm;
+  }
+
+  .info-example__title {
+    @include bm;
+    padding-top: 43px;
+
+    @include or;
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+  }
+
+  .info-example__text {
+    @include bm;
+    padding-top: 64px;
+    padding-right: 9px;
+
+    @include a;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @-moz-document url-prefix("") {
+    .info-example__text {
+      letter-spacing: 0;
+    }
+  }
+
+  .info-example__items {
+    @include bm;
+    @include nolist;
+    display: flex;
+    flex-direction: row;
+    margin-top: 52px;
+    width: 366px;
+  }
+
+  .info-example__item {
+    @include bm;
+    width: 162px;
+    padding: 17px 0;
+
+    @include or;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid $light-gray-three;
+    border-radius: 5px;
+
+    &:nth-child(1) {
+      position: relative;
+      margin-right: auto;
+
+      &::after {
+        position: absolute;
+        content: "снижение веса";
+        bottom: -6px;
+        left: 20px;
+        width: 120px;
+        padding-right: 10px;
+        padding-left: 10px;
+
+        @include a;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: none;
+        background-color: $white;
+      }
+    }
+
+    &:nth-child(2) {
+      position: relative;
+      margin-left: auto;
+
+      &::after {
+        position: absolute;
+        content: "затрачено времени";
+        bottom: -6px;
+        left: 8px;
+        width: 145px;
+
+        @include a;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: none;
+        background-color: $white;
+      }
+    }
+  }
+
+  .info-example__weight {
+    @include bm;
+  }
+
+  .info-example__days {
+    @include bm;
+  }
+
+  .info-example__costs {
+    @include bm;
+    margin-top: -65px;
+    padding-left: 530px;
+
+    @include or;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+    text-transform: uppercase;
+    color: $black;
+  }
+}
+
+@media (min-width: $desktop) {
+  .info-example {
+    @include bm;
+  }
+
+  .info-example__title {
+    @include bm;
+    padding-top: 100px;
+
+    @include or;
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+  }
+
+  .info-example__text {
+    @include bm;
+    width: 435px;
+    padding-top: 145px;
+    padding-right: 0;
+
+    @include a;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @-moz-document url-prefix("") {
+    .info-example__text {
+      letter-spacing: 0;
+    }
+  }
+
+  .info-example__items {
+    @include bm;
+    @include nolist;
+    display: flex;
+    flex-direction: row;
+    margin-top: 69px;
+    width: 367px;
+  }
+
+  .info-example__item {
+    @include bm;
+    width: 162px;
+    padding: 17px 0;
+
+    @include or;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid $light-gray-three;
+    border-radius: 5px;
+
+    &:nth-child(1) {
+      position: relative;
+      margin-right: auto;
+
+      &::after {
+        position: absolute;
+        content: "снижение веса";
+        bottom: -5px;
+        left: 20px;
+        width: 120px;
+        padding-right: 10px;
+        padding-left: 10px;
+
+        @include a;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: none;
+        background-color: $light-gray;
+      }
+    }
+
+    &:nth-child(2) {
+      position: relative;
+      margin-left: auto;
+
+      &::after {
+        position: absolute;
+        content: "затрачено времени";
+        bottom: -5px;
+        left: 9px;
+        width: 141px;
+
+        @include a;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: none;
+        background-color: $light-gray;
+      }
+    }
+  }
+
+  .info-example__weight {
+    @include bm;
+  }
+
+  .info-example__days {
+    @include bm;
+  }
+
+  .info-example__costs {
+    @include bm;
+    margin-top: 55px;
+    padding-left: 0;
+
+    @include or;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    color: $black;
+
+    span {
+      margin-left: 60px;
+    }
+  }
+}

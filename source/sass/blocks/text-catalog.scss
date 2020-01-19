@@ -1,0 +1,158 @@
+.text-catalog {
+  @include bm;
+}
+
+.text-catalog__title {
+  @include bm;
+  margin: 0;
+  padding: 0;
+  padding-top: 22px;
+  padding-right: 50px;
+
+  @include or;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: none;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.text-catalog__table {
+  @include bm;
+  width: 140px;
+  margin: 0 auto;
+  margin-top: 12px;
+
+  @include a;
+  font-size: 12px;
+  line-height: 16px;
+  color: $light-black;
+  border-collapse: collapse;
+  border: none;
+}
+
+.text-catalog__table-body {
+  @include bm;
+  width: 140px;
+}
+
+.text-catalog__table-left {
+  padding: 0 0;
+  width: 125px;
+  border-bottom: 1px solid $light-gray-three;
+  border: none;
+}
+
+.text-catalog__table-right {
+  padding: 0 0;
+  width: 125px;
+  text-align: right;
+  border-bottom: 1px solid $light-gray-three;
+  border: none;
+}
+
+
+@media (min-width: $tablet) {
+  .text-catalog {
+    @include bm;
+    width: 324px;
+  }
+
+  .text-catalog__title {
+    @include bm;
+    margin-top: 2px;
+    padding: 0 90px;
+
+    @include or;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  .text-catalog__table {
+    @include bm;
+    width: 249px;
+    margin: 0 auto;
+    margin-top: 23px;
+
+    @include a;
+    font-size: 16px;
+    line-height: 16px;
+    color: $light-black;
+    border-collapse: collapse;
+    border: none;
+  }
+
+  .text-catalog__table-body {
+    @include bm;
+    width: 249px;
+  }
+
+  .text-catalog__table-left {
+    padding: 0 0;
+    width: 125px;
+    border-bottom: 1px solid $light-gray-three;
+  }
+
+  .text-catalog__table-right {
+    padding: 7px 0;
+    width: 125px;
+    text-align: right;
+    border-bottom: 1px solid $light-gray-three;
+  }
+}
+
+@media (min-width: $desktop) {
+  .text-catalog {
+    @include bm;
+    width: 324px;
+    height: 155px;
+  }
+
+  .text-catalog__title {
+    @include bm;
+    margin-top: 0;
+    padding: 0 50px;
+
+    @include or;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  .text-catalog__table {
+    @include bm;
+    width: 169px;
+    margin: 0 auto;
+    margin-top: 22px;
+
+    @include a;
+    font-size: 16px;
+    line-height: 16px;
+    color: $light-black;
+    border-collapse: collapse;
+    border: none;
+  }
+
+  .text-catalog__table-body {
+    @include bm;
+    width: 169px;
+  }
+
+  .text-catalog__table-left {
+    padding: 0 0;
+    width: 125px;
+    border-bottom: 1px solid $light-gray-three;
+  }
+
+  .text-catalog__table-right {
+    padding: 7px 0;
+    width: 125px;
+    text-align: right;
+    border-bottom: 1px solid $light-gray-three;
+  }
+}

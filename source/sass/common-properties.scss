@@ -1,0 +1,25 @@
+body {
+  @include bm;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  @include bm;
+}
+
+$tablet: 768px;
+$desktop: 1300px;

@@ -1,0 +1,159 @@
+.text-more {
+  position: relative;
+
+  @include bm;
+  margin-top: 59px;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: -54px;
+    left: 125px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-plus-mobile.svg");
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    bottom: -63px;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: #ededed;
+  }
+}
+
+.text-more__title {
+  @include bm;
+  width: 284px;
+
+  @include or;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text-more__text {
+  @include bm;
+  width: 280px;
+  padding-top: 7px;
+
+  @include a;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+@media (min-width: $tablet) {
+  .text-more {
+    @include bm;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 22px;
+      left: 133px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/icon-plus.svg");
+    }
+
+    &::after {
+      display: none;
+      position: absolute;
+      content: "";
+      bottom: -63px;
+      left: -20px;
+      width: 320px;
+      height: 1px;
+      background-color: #ededed;
+    }
+  }
+
+  .text-more__title {
+    @include bm;
+    width: 324px;
+    margin: 0 auto;
+    padding: 0 80px;
+    padding-top: 130px;
+
+    @include or;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .text-more__text {
+    @include bm;
+    width: 324px;
+    margin-top: 25px;
+    padding: 0 50px;
+
+    @include a;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .text-more {
+    @include bm;
+    width: 324px;
+    height: 145px;
+    margin-top: 120px;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      top: -110px;
+      left: 92px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/icon-plus.svg");
+    }
+
+    &::after {
+      display: none;
+      position: absolute;
+      content: "";
+      bottom: -63px;
+      left: -20px;
+      width: 320px;
+      height: 1px;
+      background-color: #ededed;
+    }
+  }
+
+  .text-more__title {
+    @include bm;
+    width: 140px;
+    margin: 0 auto;
+
+    @include or;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .text-more__text {
+    @include bm;
+    width: 170px;
+    margin: 0 auto;
+    padding-top: 25px;
+
+    @include a;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+}

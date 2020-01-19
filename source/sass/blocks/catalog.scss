@@ -1,0 +1,392 @@
+.catalog {
+  @include bm;
+}
+
+.catalog__container {
+  @include bm;
+  @include container(320px, 20px, 20px);
+}
+
+.catalog__title {
+  position: relative;
+
+  @include bm;
+  margin-top: 15px;
+  margin-bottom: 28px;
+
+  @include or;
+  font-size: 36px;
+  line-height: 60px;
+  color: $black;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -16px;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: #ededed;
+  }
+}
+
+.catalog__items {
+  @include bm;
+  @include nolist;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__item {
+  position: relative;
+
+  @include bm;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 209px;
+  font-size: 0;
+  line-height: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: #ededed;
+  }
+}
+
+.catalog__img {
+  @include bm;
+  width: 140px;
+}
+
+.catalog__text {
+  @include bm;
+  width: 140px;
+
+  @include or;
+}
+
+.catalog__text-more {
+  @include bm;
+}
+
+.catalog__btn {
+  @include bm;
+  width: 280px;
+  height: 40px;
+  padding: 10px 0;
+  margin-top: -24px;
+
+  @include or;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $green;
+  text-decoration: none;
+  border: none;
+  outline: none;
+
+  &:hover {
+    background-color: $bg-green-hover;
+    cursor: pointer;
+  }
+
+  &:focus {
+    color: $bg-green-focus;
+  }
+
+  &--color-gray {
+    margin-top: 0;
+    color: $black;
+    background-color: $gray;
+
+    &:hover {
+      background-color: $light-gray-four;
+    }
+
+    &:focus {
+      color: $light-gray-five;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .catalog {
+    @include bm;
+  }
+
+  .catalog__container {
+    @include bm;
+    @include container(768px, 30px, 30px);
+  }
+
+  .catalog__title {
+    position: relative;
+
+    @include bm;
+    margin-top: 57px;
+    margin-bottom: 28px;
+
+    @include or;
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+
+    &::before {
+      position: absolute;
+      display: none;
+      content: "";
+      top: -16px;
+      left: -20px;
+      width: 320px;
+      height: 1px;
+      background-color: #ededed;
+    }
+  }
+
+  .catalog__items {
+    @include nolist;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+
+  .catalog__item {
+    position: relative;
+
+    @include bm;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 324px;
+    height: 432px;
+    margin-top: 138px;
+    background-color: $light-gray;
+
+    &::before {
+      position: absolute;
+      display: none;
+      content: "";
+      top: 0;
+      left: -20px;
+      width: 320px;
+      height: 1px;
+      background-color: #ededed;
+    }
+
+    &:last-child {
+      outline: 1px solid $gray;
+      background: none;
+    }
+  }
+
+  .catalog__img {
+    @include bm;
+    width: 100%;
+
+    &--big {
+      margin-top: -82px;
+    }
+
+    &--small {
+      margin-top: -46px;
+    }
+  }
+
+  .catalog__text {
+    @include bm;
+    width: 249px;
+  }
+
+  .catalog__text-more {
+    @include bm;
+  }
+
+  .catalog__btn {
+    @include bm;
+    width: 249px;
+    height: 40px;
+    padding: 8px 0;
+    margin: 0 auto;
+    margin-bottom: 5px;
+
+    @include or;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $green;
+    text-decoration: none;
+    border: none;
+    outline: none;
+
+    &:hover {
+      background-color: $bg-green-hover;
+      cursor: pointer;
+    }
+
+    &:focus {
+      color: $bg-green-focus;
+    }
+
+    &--color-gray {
+      margin-top: 50px;
+      color: $black;
+      background-color: $gray;
+
+      &:hover {
+        background-color: $light-gray-four;
+      }
+
+      &:focus {
+        color: $light-gray-five;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog {
+    @include bm;
+  }
+
+  .catalog__container {
+    @include bm;
+    @include container(1300px, 40px, 40px);
+  }
+
+  .catalog__title {
+    position: relative;
+
+    @include bm;
+    margin-top: 68px;
+    margin-bottom: 28px;
+
+    @include or;
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+
+    &::before {
+      position: absolute;
+      display: none;
+      content: "";
+      top: -16px;
+      left: -20px;
+      width: 320px;
+      height: 1px;
+      background-color: #ededed;
+    }
+  }
+
+  .catalog__items {
+    @include nolist;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+
+  .catalog__item {
+    position: relative;
+
+    @include bm;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 245px;
+    height: 434px;
+    margin-top: 139px;
+    background-color: $light-gray;
+
+    &::before {
+      position: absolute;
+      display: none;
+      content: "";
+      top: 0;
+      left: -20px;
+      width: 320px;
+      height: 1px;
+      background-color: #ededed;
+    }
+  }
+
+  .catalog__img {
+    @include bm;
+    width: 100%;
+
+    &--big {
+      margin-top: -82px;
+    }
+
+    &--small {
+      margin-top: -46px;
+    }
+  }
+
+  .catalog__text {
+    @include bm;
+    width: 169px;
+  }
+
+  .catalog__text-more {
+    @include bm;
+  }
+
+  .catalog__btn {
+    @include bm;
+    width: 169px;
+    height: 40px;
+    padding: 8px 0;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    @include or;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $green;
+    text-decoration: none;
+    border: none;
+    outline: none;
+
+    &:hover {
+      background-color: $bg-green-hover;
+      cursor: pointer;
+    }
+
+    &:focus {
+      color: $bg-green-focus;
+    }
+
+    &--color-gray {
+      @include bm;
+      margin: 0 auto;
+      color: $black;
+      background-color: $gray;
+
+      &:hover {
+        background-color: $light-gray-four;
+      }
+
+      &:focus {
+        color: $light-gray-five;
+      }
+    }
+  }
+}
